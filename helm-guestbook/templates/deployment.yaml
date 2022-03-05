@@ -30,11 +30,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /notgoingtofind
+              path: /
               port: http
           readinessProbe:
             httpGet:
-              path: /notgoingtofind
+              path: /
               port: http
           resources:
 {{ toYaml .Values.resources | indent 12 }}
